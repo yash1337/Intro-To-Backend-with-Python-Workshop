@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS language database!!</title>
+  </head>
+
+  <body>
+    <h2>Log in</h2>
+		<form method="post">
+            <table>
+                    <tr>
+                        <td class="lable">
+                            <input type="text" name="Language" value="" placeholder="Enter language to add">
+                            <br>
+                        </td>
+                        <td class="error">
+                            {{error_language}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lable">
+                                <input type="text" name="Comment" value="" placeholder="Enter comment for the language">
+                                <br>
+                        </td>
+                        <td class="error">
+                                {{error_language}}
+                            </td>
+                    </tr>
+            </table>
+			<input type="submit" formaction="/add_language" name="add" value="Add language">
+		</form>
+	<h4>
+  </body>
+</html>
